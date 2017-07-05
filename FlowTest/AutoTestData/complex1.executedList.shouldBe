@@ -1,0 +1,9 @@
+StartEvent_1
+SequenceFlow_0u5yf6u
+ExclusiveGateway_0w9235t
+SequenceFlow_0ggceh3
+ParallelGateway_0shly5k
+SequenceFlow_01ogx7u
+SequenceFlow_11o61b3
+EndEvent_1q3oyzo
+EndEvent_1rqhtjc

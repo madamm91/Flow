@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>SequenceFlow_1t5rry9</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1t5rry9" sourceRef="StartEvent_1" targetRef="ParallelGateway_13zlc29" />
+    <bpmn:parallelGateway id="ParallelGateway_13zlc29">
+      <bpmn:incoming>SequenceFlow_1t5rry9</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_147qie8</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_0x5fusz</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:endEvent id="EndEvent_0ps7k2w">
+      <bpmn:incoming>SequenceFlow_147qie8</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_147qie8" sourceRef="ParallelGateway_13zlc29" targetRef="EndEvent_0ps7k2w" />
+    <bpmn:endEvent id="EndEvent_1yyu63f">
+      <bpmn:incoming>SequenceFlow_0x5fusz</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_0x5fusz" sourceRef="ParallelGateway_13zlc29" targetRef="EndEvent_1yyu63f" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="172" y="341" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="145" y="377" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1t5rry9_di" bpmnElement="SequenceFlow_1t5rry9">
+        <di:waypoint xsi:type="dc:Point" x="208" y="359" />
+        <di:waypoint xsi:type="dc:Point" x="239" y="359" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="178.5" y="349" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ParallelGateway_13zlc29_di" bpmnElement="ParallelGateway_13zlc29">
+        <dc:Bounds x="239" y="334" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="219" y="384" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_0ps7k2w_di" bpmnElement="EndEvent_0ps7k2w">
+        <dc:Bounds x="342" y="284" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="315" y="320" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_147qie8_di" bpmnElement="SequenceFlow_147qie8">
+        <di:waypoint xsi:type="dc:Point" x="264" y="334" />
+        <di:waypoint xsi:type="dc:Point" x="264" y="302" />
+        <di:waypoint xsi:type="dc:Point" x="342" y="302" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="219" y="308" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_1yyu63f_di" bpmnElement="EndEvent_1yyu63f">
+        <dc:Bounds x="342" y="398" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="315" y="434" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0x5fusz_di" bpmnElement="SequenceFlow_0x5fusz">
+        <di:waypoint xsi:type="dc:Point" x="264" y="384" />
+        <di:waypoint xsi:type="dc:Point" x="264" y="416" />
+        <di:waypoint xsi:type="dc:Point" x="342" y="416" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="219" y="390.5" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

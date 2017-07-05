@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>SequenceFlow_0u5yf6u</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway id="ExclusiveGateway_0w9235t">
+      <bpmn:incoming>SequenceFlow_0u5yf6u</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0tza5nj</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_0ggceh3</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="SequenceFlow_0u5yf6u" sourceRef="StartEvent_1" targetRef="ExclusiveGateway_0w9235t" />
+    <bpmn:endEvent id="EndEvent_07epowy">
+      <bpmn:incoming>SequenceFlow_0tza5nj</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_0tza5nj" name="false" sourceRef="ExclusiveGateway_0w9235t" targetRef="EndEvent_07epowy" />
+    <bpmn:sequenceFlow id="SequenceFlow_0ggceh3" name="true" sourceRef="ExclusiveGateway_0w9235t" targetRef="ParallelGateway_0shly5k" />
+    <bpmn:parallelGateway id="ParallelGateway_0shly5k">
+      <bpmn:incoming>SequenceFlow_0ggceh3</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_01ogx7u</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_11o61b3</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:endEvent id="EndEvent_1q3oyzo">
+      <bpmn:incoming>SequenceFlow_01ogx7u</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_01ogx7u" sourceRef="ParallelGateway_0shly5k" targetRef="EndEvent_1q3oyzo" />
+    <bpmn:endEvent id="EndEvent_1rqhtjc">
+      <bpmn:incoming>SequenceFlow_11o61b3</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_11o61b3" sourceRef="ParallelGateway_0shly5k" targetRef="EndEvent_1rqhtjc" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="155" y="311" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="128" y="347" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ExclusiveGateway_0w9235t_di" bpmnElement="ExclusiveGateway_0w9235t" isMarkerVisible="true">
+        <dc:Bounds x="234" y="304" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="214" y="354" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0u5yf6u_di" bpmnElement="SequenceFlow_0u5yf6u">
+        <di:waypoint xsi:type="dc:Point" x="191" y="329" />
+        <di:waypoint xsi:type="dc:Point" x="234" y="329" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="167.5" y="319" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_07epowy_di" bpmnElement="EndEvent_07epowy">
+        <dc:Bounds x="342" y="243" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="315" y="279" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0tza5nj_di" bpmnElement="SequenceFlow_0tza5nj">
+        <di:waypoint xsi:type="dc:Point" x="259" y="304" />
+        <di:waypoint xsi:type="dc:Point" x="259" y="261" />
+        <di:waypoint xsi:type="dc:Point" x="342" y="261" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="246" y="238.5" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0ggceh3_di" bpmnElement="SequenceFlow_0ggceh3">
+        <di:waypoint xsi:type="dc:Point" x="259" y="354" />
+        <di:waypoint xsi:type="dc:Point" x="259" y="413" />
+        <di:waypoint xsi:type="dc:Point" x="321" y="413" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="233" y="417" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ParallelGateway_0shly5k_di" bpmnElement="ParallelGateway_0shly5k">
+        <dc:Bounds x="321" y="388" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="301" y="438" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_1q3oyzo_di" bpmnElement="EndEvent_1q3oyzo">
+        <dc:Bounds x="428" y="344" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="401" y="380" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_01ogx7u_di" bpmnElement="SequenceFlow_01ogx7u">
+        <di:waypoint xsi:type="dc:Point" x="346" y="388" />
+        <di:waypoint xsi:type="dc:Point" x="346" y="362" />
+        <di:waypoint xsi:type="dc:Point" x="428" y="362" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="293" y="363" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_1rqhtjc_di" bpmnElement="EndEvent_1rqhtjc">
+        <dc:Bounds x="428" y="439" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="401" y="475" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_11o61b3_di" bpmnElement="SequenceFlow_11o61b3">
+        <di:waypoint xsi:type="dc:Point" x="346" y="438" />
+        <di:waypoint xsi:type="dc:Point" x="346" y="457" />
+        <di:waypoint xsi:type="dc:Point" x="428" y="457" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="301" y="437.5" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

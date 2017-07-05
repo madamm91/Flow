@@ -1,0 +1,11 @@
+StartEvent_1
+ExclusiveGateway_0w9235t
+EndEvent_07epowy
+ParallelGateway_0shly5k
+EndEvent_1q3oyzo
+EndEvent_1rqhtjc
+SequenceFlow_0u5yf6u
+SequenceFlow_0tza5nj
+SequenceFlow_0ggceh3
+SequenceFlow_01ogx7u
+SequenceFlow_11o61b3

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" 
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" 
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" 
+             xmlns:signavio="http://www.signavio.com" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             exporter="Signavio Process Editor, http://www.signavio.com" 
+             exporterVersion="6.1.0" 
+             expressionLanguage="http://www.w3.org/1999/XPath" 
+             id="sid-5a3dd963-5d50-4127-b0d0-3164a51771d0" 
+             targetNamespace="http://www.signavio.com/bpmn20" 
+             typeLanguage="http://www.w3.org/2001/XMLSchema" 
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd" 
+             xmlns:qbp="http://www.qbp-simulator.com/Schema201212">
+  <process id="sid-e138ad92-53db-4474-a117-cf3a5074182e">
+  </process>
+</definitions>
